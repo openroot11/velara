@@ -1,0 +1,14 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "notas",
+  "attachmentFolderPath": "notas/adjuntos",
+  "useMarkdownLinks": false,
+  "showUnsupportedFiles": true,
+  "userIgnoreFilters": [
+    "sitio/node_modules/",
+    "sitio/dist/",
+    "sitio/.git/",
+    "referencia-spradling/scripts/node_modules/"
+  ]
+}

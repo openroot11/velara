@@ -1,0 +1,123 @@
+{
+  "body": {
+    "fontFamily": "Gramatika, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(33, 37, 41)",
+    "background": "rgb(255, 255, 255)",
+    "borderRadius": "0px",
+    "padding": "0px"
+  },
+  "h1": null,
+  "h2": {
+    "fontFamily": "\"Dala Moa\", sans-serif",
+    "fontSize": "60px",
+    "fontWeight": "500",
+    "lineHeight": "72px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": "0px"
+  },
+  "navLink": {
+    "fontFamily": "Gramatika, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "500",
+    "lineHeight": "70px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": "0px 8px"
+  },
+  "button": {
+    "fontFamily": "Gramatika, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "500",
+    "lineHeight": "70px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": "0px 8px"
+  },
+  "buttonText": "Dónde comprar",
+  "topColors": [
+    [
+      "rgb(33, 37, 41)",
+      456
+    ],
+    [
+      "rgb(255, 255, 255)",
+      162
+    ],
+    [
+      "rgb(0, 123, 255)",
+      36
+    ],
+    [
+      "rgb(119, 119, 119)",
+      30
+    ],
+    [
+      "rgb(74, 74, 74)",
+      25
+    ],
+    [
+      "rgb(51, 71, 91)",
+      13
+    ],
+    [
+      "rgb(249, 248, 245)",
+      11
+    ],
+    [
+      "rgb(241, 241, 241)",
+      10
+    ],
+    [
+      "rgb(155, 155, 155)",
+      6
+    ],
+    [
+      "rgb(0, 87, 95)",
+      2
+    ],
+    [
+      "rgb(220, 53, 69)",
+      2
+    ],
+    [
+      "rgb(203, 214, 226) rgb(51, 71, 91) rgb(51, 71, 91)",
+      1
+    ],
+    [
+      "rgb(40, 40, 40)",
+      1
+    ],
+    [
+      "rgba(255, 255, 255, 0.2)",
+      1
+    ],
+    [
+      "rgba(0, 0, 0, 0.7)",
+      1
+    ]
+  ],
+  "fontFamilies": [
+    "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "Gramatika, sans-serif",
+    "\"Dala Moa\", sans-serif",
+    "\"Gill Sans\", sans-serif"
+  ],
+  "title": "Grupo Spradling - Inicio | Spradling Group",
+  "metaDesc": "Grupo Spradling - Portal Global",
+  "fontFaceLinks": []
+}
