@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
+    color-scheme: light;
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  body {
+    margin: 0;
+    background-color: theme("colors.paper.DEFAULT");
+    color: theme("colors.ink.DEFAULT");
+    font-family: theme("fontFamily.sans");
+    font-weight: 400;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: theme("colors.accent.DEFAULT");
+    color: #fff;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: theme("fontFamily.display");
+    font-weight: 400;
+    text-wrap: balance;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.accent.deep");
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* ---- Contenedores ---------------------------------------------------- */
+  .shell {
+    width: 100%;
+    max-width: theme("maxWidth.shell");
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 5vw, 4rem);
+  }
+
+  .shell-tight {
+    width: 100%;
+    max-width: 1080px;
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 5vw, 4rem);
+  }
+
+  /* ---- Etiquetas y filetes ------------------------------------------- */
+  .overline {
+    font-family: theme("fontFamily.sans");
+    font-size: theme("fontSize.overline");
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  /* Filete corto bajo los títulos centrados — gesto de la referencia. */
+  .rule-under {
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background: theme("colors.accent.DEFAULT");
+  }
+
+  .hairline {
+    height: 1px;
+    width: 100%;
+    background: theme("colors.smoke.line");
+  }
+
+  /* Enlace con subrayado que se dibuja al pasar el cursor. */
+  .link-underline {
+    position: relative;
+    display: inline-block;
+  }
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.15em;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s var(--ease-soft);
+  }
+  .link-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  /* ---- Botones tipo píldora (referencia Spradling) ------------------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    border-radius: 9999px;
+    padding: 0.95rem 1.7rem;
+    font-family: theme("fontFamily.sans");
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    border: 1px solid transparent;
+    transition: background-color 0.35s var(--ease-soft), color 0.35s var(--ease-soft),
+      border-color 0.35s var(--ease-soft), transform 0.35s var(--ease-soft);
+  }
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+
+  .btn-solid {
+    background: theme("colors.ink.DEFAULT");
+    color: #fff;
+  }
+  .btn-solid:hover {
+    background: #000;
+  }
+
+  .btn-teal {
+    background: theme("colors.accent.deep");
+    color: #fff;
+  }
+  .btn-teal:hover {
+    background: theme("colors.accent.dark");
+  }
+
+  .btn-outline-dark {
+    border-color: rgba(27, 27, 27, 0.3);
+    color: theme("colors.ink.DEFAULT");
+  }
+  .btn-outline-dark:hover {
+    background: theme("colors.ink.DEFAULT");
+    border-color: theme("colors.ink.DEFAULT");
+    color: #fff;
+  }
+
+  .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.45);
+    color: #fff;
+  }
+  .btn-outline-light:hover {
+    background: #fff;
+    border-color: #fff;
+    color: theme("colors.ink.DEFAULT");
+  }
+
+  /* ---- Panel gris para fichas técnicas ------------------------------ */
+  .panel {
+    background: theme("colors.paper.50");
+    border: 1px solid theme("colors.smoke.line");
+  }
+
+  /* ---- Prosa para artículos de Recursos ---------------------------- */
+  .prose-vel {
+    color: theme("colors.ink.700");
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  .prose-vel p { margin: 0 0 1.15em; max-width: 68ch; }
+  .prose-vel h2 {
+    font-family: theme("fontFamily.display");
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: theme("colors.ink.DEFAULT");
+    margin: 2em 0 0.7em;
+  }
+  .prose-vel h3 {
+    font-family: theme("fontFamily.display");
+    font-size: 1.2rem;
+    color: theme("colors.ink.DEFAULT");
+    margin: 1.6em 0 0.5em;
+  }
+  .prose-vel ul, .prose-vel ol { margin: 0 0 1.15em; padding-left: 1.2em; max-width: 66ch; }
+  .prose-vel li { margin-bottom: 0.4em; }
+  .prose-vel a { color: theme("colors.accent.deep"); text-decoration: underline; text-underline-offset: 2px; }
+  .prose-vel strong { color: theme("colors.ink.DEFAULT"); font-weight: 600; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+  .drag-none {
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+  /* Corte diagonal para las franjas de acento sobre las fotos. */
+  .clip-angle-br {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%);
+  }
+  .clip-angle-bl {
+    clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+  }
+}
