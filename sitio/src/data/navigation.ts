@@ -48,6 +48,17 @@ export const mainNav: NavItem[] = [
     layout: "mega",
     columns: [
       {
+        label: "Forros para carros",
+        to: "/servicios/forros-para-carros",
+        links: [
+          { label: "Asientos delanteros", to: "/servicios/forros-para-carros#delanteros" },
+          { label: "Banca trasera", to: "/servicios/forros-para-carros#traseros" },
+          { label: "Timón y palanca", to: "/servicios/forros-para-carros#volante" },
+          { label: "Juego completo", to: "/servicios/forros-para-carros#juego-completo" },
+          { label: "Flotas y taxis", to: "/servicios/forros-para-carros#flotas" },
+        ],
+      },
+      {
         label: "Tapizado automotriz",
         to: "/servicios/tapizado-automotriz",
         links: [
@@ -81,7 +92,7 @@ export const mainNav: NavItem[] = [
         ],
       },
       {
-        label: "Forros a la medida",
+        label: "Forros para muebles y equipos",
         to: "/servicios/forros",
         links: [
           { label: "Forros de sillas", to: "/servicios/forros#sillas" },
@@ -96,7 +107,7 @@ export const mainNav: NavItem[] = [
       {
         label: "Ver todos los servicios",
         to: "/servicios",
-        blurb: "Los cuatro oficios del taller, con sus tiempos y materiales.",
+        blurb: "Los cinco oficios del taller, con sus tiempos y materiales.",
       },
       {
         label: "¿No sabe cuál es el suyo?",
@@ -208,10 +219,11 @@ export const mainNav: NavItem[] = [
         label: "Por oficio",
         links: [
           { label: "Todos los trabajos", to: "/proyectos" },
+          { label: "Forros para carros", to: "/proyectos?categoria=forros-para-carros" },
           { label: "Tapizado automotriz", to: "/proyectos?categoria=tapizado-automotriz" },
           { label: "Tapizado de motos", to: "/proyectos?categoria=tapizado-de-motos" },
           { label: "Carpas y toldos", to: "/proyectos?categoria=carpas-para-negocio" },
-          { label: "Forros a la medida", to: "/proyectos?categoria=forros" },
+          { label: "Forros para muebles y equipos", to: "/proyectos?categoria=forros" },
         ],
       },
     ],

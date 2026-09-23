@@ -20,10 +20,10 @@ Tokens en `tailwind.config.js` → `theme.extend.colors`.
 | `paper.100` / `paper.200` | `#F3F2EF` / `#E7E5E0` | Paneles y bordes suaves |
 | `smoke` | `#6E6E6E` | Texto secundario |
 | `smoke.line` | `#E2E0DB` | Filetes y bordes |
-| `accent` | `#0E7C7C` | Verde azulado (teal). Títulos grandes, filetes, marcadores. 4.8:1 sobre blanco |
-| `accent.deep` | `#0A5A5A` | Único que pasa AA en texto pequeño sobre blanco (7.6:1) |
-| `accent.soft` | `#5AA9A9` | El válido sobre fondo `ink` (6.3:1) |
-| `accent.pale` | `#E3F0F0` | Fondos teñidos muy claros |
+| `accent` | `#FF5A1F` | Naranja vibrante. Títulos grandes, filetes, marcadores |
+| `accent.deep` | `#C7420E` | El que pasa AA en texto pequeño sobre blanco |
+| `accent.soft` | `#FF8F5E` | El válido sobre fondo `ink` |
+| `accent.pale` | `#FFE7DA` | Fondos teñidos muy claros |
 
 **Regla de oro:** el acento es acento, nunca el color dominante. Encabezado y
 pie son `ink`; casi todo lo demás es `paper` con paneles `paper.50`.

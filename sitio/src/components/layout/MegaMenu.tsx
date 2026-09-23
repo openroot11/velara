@@ -27,8 +27,18 @@ function FeatureRow({ item, onNavigate }: { item: NavItem; onNavigate: () => voi
 }
 
 /** Panel del mega-menú (una sección a la vez), a todo el ancho bajo la barra. */
+/** Columnas del mega-menú en desktop, según cuántas traiga la sección (evita huecos). */
+const LG_COLS: Record<number, string> = {
+  1: "lg:grid-cols-1",
+  2: "lg:grid-cols-2",
+  3: "lg:grid-cols-3",
+  4: "lg:grid-cols-4",
+  5: "lg:grid-cols-5",
+};
+
 export function MegaMenu({ item, onNavigate }: { item: NavItem; onNavigate: () => void }) {
   const isList = item.layout === "list";
+  const lgColsClass = LG_COLS[item.columns?.length ?? 4] ?? "lg:grid-cols-4";
 
   return (
     <motion.div
@@ -58,7 +68,7 @@ export function MegaMenu({ item, onNavigate }: { item: NavItem; onNavigate: () =
             ))}
           </div>
         ) : (
-          <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className={`grid gap-x-10 gap-y-8 sm:grid-cols-2 ${lgColsClass}`}>
             {item.columns?.map((col) => (
               <div key={col.label} className="flex flex-col gap-3">
                 {col.to ? (

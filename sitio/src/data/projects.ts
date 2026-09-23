@@ -101,7 +101,7 @@ export const projects: Project[] = [
     title: "Tapizado completo",
     location: "Barranquilla",
     size: "hero",
-    cover: "projCamioneta",
+    cover: "realTapizadoFlota",
     teaser: "Ocho años de sol y polvo recuperados silla por silla.",
     intro:
       "Una camioneta de trabajo con ocho años encima y todos los kilómetros a la vista: sillas descosidas, espumas hundidas y el techo despegado por el calor. Rehicimos el interior completo en vinilo técnico, conservando lo que todavía servía y cambiando sólo lo que ya no aguantaba otra temporada.",
@@ -120,7 +120,7 @@ export const projects: Project[] = [
       },
       { craft: "procRestore" },
     ),
-    gallery: ["projCamioneta", "svcAutomotriz", "matVinyl", "transformDetail", "craftHands", "procCraft"],
+    gallery: ["realTapizadoFlota", "realTapizadoFlota2", "realTapizadoFlota3", "matVinyl", "realProcesoCosturaMano", "realProcesoPatronaje"],
   },
   {
     slug: "moto-de-reparto-sillin-a-la-medida",
@@ -193,8 +193,8 @@ export const projects: Project[] = [
   {
     slug: "taxi-urbano-juego-de-forros",
     subject: "Taxi urbano",
-    category: "Forros a la medida",
-    categorySlug: "forros",
+    category: "Forros para carros",
+    categorySlug: "forros-para-carros",
     title: "Juego de forros",
     location: "Barranquilla",
     size: "regular",

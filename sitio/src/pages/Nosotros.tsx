@@ -27,7 +27,7 @@ const historia = [
   { year: "2016", title: "Carpas y toldos", body: "Un restaurante nos pide cubrir su terraza. Montamos el área de confección de lona y sumamos el cuarto oficio." },
   { year: "2019", title: "Diez años", body: "Nos mudamos al taller actual, con área de patronaje, costura y montaje separadas." },
   { year: "2022", title: "Servicio a talleres", body: "Empezamos a confeccionar para talleres de motos y latonería de la ciudad, con tiempos de mayorista." },
-  { year: "2025", title: "Hoy", body: "Cuatro oficios, un equipo de artesanos y el mismo estándar de acabado para una silla o para una flota." },
+  { year: "2026", title: "Hoy", body: "Cinco oficios, un equipo de artesanos y el mismo estándar de acabado para una silla o para una flota." },
 ];
 
 export default function Nosotros() {
@@ -59,7 +59,7 @@ export default function Nosotros() {
           </Reveal>
           <Reveal from="up" distance={22} delay={0.08}>
             <div className="aspect-[4/5] overflow-hidden border border-smoke-line">
-              <Figure image="aboutWorkshop" className="h-full w-full" sizes="(min-width:1024px) 45vw, 92vw" />
+              <Figure image="realEquipoTaller" className="h-full w-full" sizes="(min-width:1024px) 45vw, 92vw" />
             </div>
           </Reveal>
         </div>
@@ -84,7 +84,7 @@ export default function Nosotros() {
       {/* Historia */}
       <section className="bg-paper py-section">
         <div className="shell">
-          <SectionHeading eyebrow="Hacemos historia" title="De un local de 20 metros a cuatro oficios" className="mb-14" />
+          <SectionHeading eyebrow="Hacemos historia" title="De un local de 20 metros a cinco oficios" className="mb-14" />
           <div className="mx-auto max-w-3xl">
             {historia.map((h) => (
               <Reveal key={h.year} from="up" distance={20} className="relative flex gap-6 border-l border-smoke-line pb-10 pl-8 last:pb-0">
@@ -108,7 +108,7 @@ export default function Nosotros() {
             <h2 className="mt-4 font-display text-display-sm font-light">Buscamos manos con oficio</h2>
             <p className="mt-4 max-w-lg text-pretty text-[1rem] leading-relaxed text-white/70">
               Tapiceros, costureros y ayudantes de taller que quieran hacer las cosas bien y aprender
-              los cuatro oficios. Si es lo suyo, escríbanos con lo que sabe hacer.
+              los cinco oficios. Si es lo suyo, escríbanos con lo que sabe hacer.
             </p>
           </div>
           <div className="flex md:justify-end">

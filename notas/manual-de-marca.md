@@ -77,7 +77,7 @@ Detalle completo y fuente de verdad en código: [[identidad-visual]]
 
 | | |
 |---|---|
-| **Color** | Tinta `#1B1B1B` + papel `#FFFFFF` y grises cálidos. Un solo acento teal `#0E7C7C`. Regla: el acento nunca domina |
+| **Color** | Tinta `#1B1B1B` + papel `#FFFFFF` y grises cálidos. Un solo acento naranja `#FF5A1F`. Regla: el acento nunca domina |
 | **Tipografía** | Fraunces (títulos, serif de alto contraste) + Manrope (texto e interfaz) |
 | **Gesto firma** | Título de sección centrado con filete corto debajo |
 | **Formas** | Todo recto salvo los botones, que son píldora 100 % redondeada |

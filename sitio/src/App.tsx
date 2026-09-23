@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence, MotionConfig, motion } from "framer-motion";
 import SmoothScroll from "@/components/system/SmoothScroll";
@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Home from "@/pages/Home";
 import { usePrefersReducedMotion } from "@/lib/hooks";
+import { captureAdAttribution } from "@/lib/adAttribution";
 
 const Servicios = lazy(() => import("@/pages/Servicios"));
 const ServicioDetail = lazy(() => import("@/pages/ServicioDetail"));
@@ -58,6 +59,12 @@ function AnimatedRoutes() {
 
 export default function App() {
   const reduced = usePrefersReducedMotion();
+  // Corre una vez al cargar el sitio (un clic desde un anuncio siempre trae
+  // una carga completa, no una navegación de React Router) -- así queda
+  // capturado sin importar en qué página caiga la campaña.
+  useEffect(() => {
+    captureAdAttribution();
+  }, []);
   return (
     <MotionConfig reducedMotion={reduced ? "always" : "user"}>
       <SmoothScroll>

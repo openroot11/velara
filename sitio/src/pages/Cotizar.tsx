@@ -6,6 +6,7 @@ import { services } from "@/data/services";
 import { site } from "@/data/site";
 import { usePageTitle } from "@/lib/hooks";
 import { cn } from "@/lib/cn";
+import { reportWhatsAppClick } from "@/lib/googleAdsConversion";
 
 interface FormState {
   nombre: string;
@@ -127,6 +128,7 @@ export default function Cotizar() {
       first?.focus();
       return;
     }
+    reportWhatsAppClick();
     const url = `https://wa.me/${site.contact.whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };

@@ -11,42 +11,37 @@
  *
  * PENDIENTE: reemplazar por la línea real antes de publicar.
  */
-const WHATSAPP_NUMBER = "573000000000";
+const WHATSAPP_NUMBER = "573225640747";
 
 export const site = {
   name: "VELARA",
   shortName: "VELARA",
   descriptor: "Taller de cuero y tapicería",
   tagline:
-    "Taller de cuero y tapicería en Barranquilla. Tapizado automotriz y de motos, carpas y toldos para negocio y forros a la medida.",
+    "Taller de cuero y tapicería en Barranquilla. Forros para carros, tapicería automotriz y tapizado de sillines de moto — también carpas, toldos y forros a la medida.",
   legalName: "VELARA Taller S.A.S.",
   /** Año de fundación — usado en el pie y en «años de oficio». */
   foundedYear: 2009,
 
   contact: {
-    phoneDisplay: "+57 300 000 0000",
-    phoneHref: "tel:+573000000000",
+    phoneDisplay: "+57 322 564 0747",
+    phoneHref: "tel:+573225640747",
     whatsappNumber: WHATSAPP_NUMBER,
-    whatsappDisplay: "+57 300 000 0000",
+    whatsappDisplay: "+57 322 564 0747",
     whatsappHref: `https://wa.me/${WHATSAPP_NUMBER}`,
-    email: "hola@velara.com.co",
-    emailHref: "mailto:hola@velara.com.co",
+    email: "velarataller@gmail.com",
+    emailHref: "mailto:velarataller@gmail.com",
   },
 
   location: {
-    line1: "Calle 00 # 00-00, Barrio Montecristo",
+    line1: "Calle 56 # 12C-02, Local 3",
     line2: "Barranquilla, Atlántico",
     short: "Barranquilla · Colombia",
     city: "Barranquilla",
-    mapHref: "https://maps.google.com/?q=Barranquilla,+Atl%C3%A1ntico,+Colombia",
+    mapHref: "https://maps.google.com/?q=Calle+56+%2312C-02+Local+3,+Barranquilla,+Atl%C3%A1ntico,+Colombia",
   },
 
-  social: [
-    { label: "Instagram", href: "https://instagram.com" },
-    { label: "Facebook", href: "https://facebook.com" },
-    { label: "WhatsApp", href: `https://wa.me/${WHATSAPP_NUMBER}` },
-    { label: "TikTok", href: "https://tiktok.com" },
-  ],
+  social: [{ label: "WhatsApp", href: `https://wa.me/${WHATSAPP_NUMBER}` }],
 
   /** Llamada a la acción principal, reutilizada en todo el sitio. */
   cta: {

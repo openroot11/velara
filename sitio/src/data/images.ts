@@ -273,6 +273,79 @@ const registry = {
     alt: "Manos trabajando el interior de un vehículo en el taller",
     position: "center 50%",
   },
+
+  /* ---- ASIENTOS Y TALLER (stock curado) ----
+   * Sustituyen las fotos tomadas con celular del taller (bajo contraste, fondos
+   * desordenados, marcas de otros negocios visibles). Curadas por tema y color
+   * desde bancos gratuitos (Unsplash, sin atribución requerida). Las claves se
+   * conservan para no tocar las referencias en services.ts / projects.ts. */
+  realForroSpark: {
+    src: u("photo-1609511766479-e26e9ff465db", 1600),
+    alt: "Primer plano de asiento tapizado en cuerina azul con costura acanalada, estilo automotriz clásico",
+  },
+  realForroKia: {
+    src: u("photo-1785293130319-4829ad6ef29c", 1600),
+    alt: "Asiento de carro clásico tapizado en negro con inserto azul y costura de diseño",
+  },
+  realTapizadoCueroProceso: {
+    src: u("photo-1616196334411-1d8d09708ca6", 1600),
+    alt: "Asiento de carro tapizado en cuero negro, trabajo de tapicería en el taller",
+  },
+  realTapizadoVerdeTerminado: {
+    src: u("photo-1625957976508-e90394b14550", 1600),
+    alt: "Asiento deportivo tapizado en negro con costura y vivo verde, terminado con detalle artesanal",
+  },
+  realTapizadoFlota: {
+    src: u("photo-1624901713275-bbc0b448bb38", 1800),
+    alt: "Interior de buseta de transporte público con asientos tapizados en azul, en fila",
+  },
+  realTapizadoFlota2: {
+    src: u("photo-1776821011082-917bff7e1329", 1800),
+    alt: "Habitáculo de la misma buseta, con las sillas delanteras y traseras forradas",
+    position: "center 45%",
+  },
+  realTapizadoFlota3: {
+    src: u("photo-1624901713275-bbc0b448bb38", 2000, 72),
+    alt: "Vista general del interior de la buseta con el juego completo de asientos terminado",
+    position: "center 60%",
+  },
+  realRestauracionPanel: {
+    src: u("photo-1584099662811-6744be099a74", 1600),
+    alt: "Panel de puerta de carro clásico restaurado en cuero café con manija cromada",
+  },
+  realRestauracionTimon: {
+    src: u("photo-1469050061383-f5fd48f3205d", 1600),
+    alt: "Timón de carro clásico con tablero en cuero café, estilo vintage",
+  },
+  realProcesoPatronaje: {
+    src: u("photo-1787005241178-c9006ea9610b", 1600),
+    alt: "Manos trazando un patrón de papel sobre cuero antes de cortar",
+  },
+  realProcesoCosturaMano: {
+    src: u("photo-1534126511673-b6899657816a", 1600),
+    alt: "Artesano cosiendo cuero café a máquina en el taller",
+  },
+  realSillinMotoRosa: {
+    src: u("photo-1688298236546-759a8ce0769c", 1600),
+    alt: "Primer plano de un sillín de moto recién tapizado",
+  },
+  realSillinCafeRacer: {
+    src: u("photo-1649894159916-f3d688281f8d", 1600),
+    alt: "Sillín de moto café racer en cuero café con costura artesanal a mano",
+  },
+  realSillinCafeRacer2: {
+    src: u("photo-1672626923130-a16b9061d407", 1600),
+    alt: "Detalle del sillín café racer ya montado en la moto",
+  },
+  realForroSillaOficina: {
+    src: u("photo-1613748743728-e5f1dc47aef8", 1600),
+    alt: "Silla reforrada en cuero negro con costura visible, acabado profesional",
+  },
+  realEquipoTaller: {
+    src: u("photo-1717700921740-a1440f3b89a4", 2000, 72),
+    alt: "Retrato de tapicero con delantal de trabajo en el taller",
+    position: "center 30%",
+  },
 } satisfies Record<string, ImageAsset>;
 
 export type ImageKey = keyof typeof registry;

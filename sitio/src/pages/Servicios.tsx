@@ -14,7 +14,7 @@ export default function Servicios() {
       <PageHero
         breadcrumb={[{ label: "Servicios" }]}
         eyebrow="Nuestro oficio"
-        title="Cuatro oficios, un solo taller"
+        title="Cinco oficios, un solo taller"
         standfirst="Cuero, vinilo y lona cortados a la medida de cada pieza. El mismo estándar de acabado para un asiento del conductor o para una flota entera."
         image="pageServicios"
         band
@@ -83,7 +83,7 @@ export default function Servicios() {
       <section className="bg-accent-deep text-white">
         <div className="shell flex flex-col items-start gap-6 py-14 sm:flex-row sm:items-center sm:justify-between">
           <p className="max-w-xl text-pretty font-display text-2xl font-light leading-snug">
-            ¿No sabe en cuál de los cuatro entra su trabajo?
+            ¿No sabe en cuál de los cinco entra su trabajo?
           </p>
           <Cta href="/cotizar" variant="outline-light" className="shrink-0">
             Cuéntenos y lo revisamos

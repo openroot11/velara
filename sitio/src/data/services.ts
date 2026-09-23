@@ -35,13 +35,75 @@ export interface Service {
 }
 
 /**
- * Los cuatro oficios del taller. Agregar un quinto no exige tocar layout:
+ * Los cinco oficios del taller. Agregar uno más no exige tocar layout:
  * la retícula de la portada, el índice de /servicios, la columna del pie y la
  * lista del formulario leen todos de este arreglo.
+ *
+ * Orden pensado para Google Ads / SEO: los tres servicios que más venden
+ * (forros para carros, tapizado automotriz, sillines de moto) van primero.
  */
 export const services: Service[] = [
   {
     index: "01",
+    slug: "forros-para-carros",
+    title: "Forros para carros",
+    menuLabel: "Forros para carros",
+    scope: "Asientos · timón · consola",
+    tagline: "El forro que se ajusta a su carro, no al revés.",
+    description:
+      "Forros a la medida para asientos, timón y consola. Patrón levantado sobre su carro — no una talla genérica de tienda — con entrega rápida.",
+    standfirst:
+      "Un forro de talla única nunca queda: hace bolsas en la espalda, se corre con el uso y tapa los controles. Levantamos el patrón sobre los asientos reales de su carro, cortamos y cosemos a la medida, y lo entregamos listo para instalar el mismo día, sin herramientas. Es la opción más rápida y económica para proteger o renovar el interior sin tocar la tapicería original.",
+    image: "realForroSpark",
+    heroImage: "realForroKia",
+    deliverables: [
+      "Patrón levantado sobre los asientos reales del carro",
+      "Corte y costura en tela técnica o cuerina, a elección",
+      "Cierres y elásticos ocultos para un ajuste limpio",
+      "Aberturas para cinturón, airbag y consola sin tapar controles",
+      "Instalación incluida el mismo día de entrega",
+    ],
+    facts: [
+      { label: "Tiempo típico", value: "1 a 3 días" },
+      { label: "Materiales", value: "Cuerina técnica · tela deportiva · neopreno · cuero" },
+      { label: "Cobertura", value: "Recepción en el taller · servicio express en el día" },
+      { label: "Garantía", value: "6 meses en costura y cierres" },
+    ],
+    applications: [
+      {
+        id: "delanteros",
+        title: "Asientos delanteros",
+        body: "Los que más se desgastan. Forro a la medida del respaldo y la silla, con aberturas para los controles laterales y el cinturón.",
+        image: "transformDetail",
+      },
+      {
+        id: "traseros",
+        title: "Banca trasera",
+        body: "Silla corrida o dividida 60/40, con apertura para el pasador si su carro la tiene. Igualamos el material del juego delantero.",
+        image: "svcForros",
+      },
+      {
+        id: "volante",
+        title: "Timón y palanca",
+        body: "Funda de timón cosida a mano y forro de palanca en el mismo material del juego de asientos, para que el interior lea parejo.",
+        image: "craftHands",
+      },
+      {
+        id: "juego-completo",
+        title: "Juego completo",
+        body: "Sedán, camioneta o taxi: todo el interior en un solo pedido, con el mismo patrón y material para que no se note la diferencia entre piezas.",
+        image: "projTaxi",
+      },
+      {
+        id: "flotas",
+        title: "Flotas y taxis",
+        body: "Un forro que aguanta el uso de servicio público: entradas y salidas todo el día, fácil de limpiar y rápido de reponer por unidad.",
+        image: "matFabric",
+      },
+    ],
+  },
+  {
+    index: "02",
     slug: "tapizado-automotriz",
     title: "Tapizado automotriz",
     menuLabel: "Tapizado automotriz",
@@ -51,8 +113,8 @@ export const services: Service[] = [
       "Sillas, paneles, techos y timones. Patronaje a la medida del vehículo y costura que respeta el diseño original.",
     standfirst:
       "Rehacemos interiores de carro sin adaptar patrones genéricos: cada silla, panel y techo se traza sobre la pieza real del vehículo. Igualamos hilos, pasos de costura y perforaciones al diseño de fábrica, y conservamos lo que todavía sirve. Trabajamos autos particulares, camionetas de trabajo y flotas enteras.",
-    image: "svcAutomotriz",
-    heroImage: "svcAutomotriz",
+    image: "realTapizadoVerdeTerminado",
+    heroImage: "realTapizadoCueroProceso",
     deliverables: [
       "Diagnóstico superficie por superficie",
       "Patronaje sobre el vehículo, sin moldes universales",
@@ -77,7 +139,7 @@ export const services: Service[] = [
         id: "paneles",
         title: "Paneles y tableros",
         body: "Paneles de puerta, apoyabrazos y molduras forrados en el mismo material y acabado de las sillas, para que el interior lea como un conjunto.",
-        image: "procCraft",
+        image: "realRestauracionPanel",
       },
       {
         id: "cielos",
@@ -89,18 +151,18 @@ export const services: Service[] = [
         id: "timones",
         title: "Timones y consolas",
         body: "Forrado de timón, palanca y freno de mano en cuero cosido a mano, con la costura marcada donde va el agarre.",
-        image: "craftHands",
+        image: "realRestauracionTimon",
       },
       {
         id: "flotas",
         title: "Flotas y vehículos de trabajo",
         body: "Un patrón maestro sobre el primer vehículo, probado en servicio, y luego la producción en serie por lotes para no parar la operación.",
-        image: "projCamioneta",
+        image: "realTapizadoFlota",
       },
     ],
   },
   {
-    index: "02",
+    index: "03",
     slug: "tapizado-de-motos",
     title: "Tapizado de motos",
     menuLabel: "Tapizado de motos",
@@ -109,9 +171,9 @@ export const services: Service[] = [
     description:
       "Reconstruimos el sillín desde la base: espuma, forma y material tratado para aguantar sol, lluvia y kilómetros.",
     standfirst:
-      "Quien trabaja en moto pasa más horas sentado que un oficinista, y con mucho peor asiento. Reconstruimos el sillín desde la base — espuma en dos densidades, forma corregida y material tratado contra el sol — y resolvemos maletas y baúles en el mismo acabado. También restauramos sillines de motos clásicas con el patrón de época.",
-    image: "svcMoto",
-    heroImage: "svcMoto",
+      "Quien trabaja en moto pasa más horas sentado que un oficinista, y con mucho peor asiento. Reconstruimos el sillín desde la base — espuma en dos densidades, forma corregida y material tratado contra el sol — y resolvemos maletas y baúles en el mismo acabado. Atendemos todas las marcas y modelos, con más experiencia en las motos que más se mueven en Colombia: AKT, Bajaj, Yamaha, Honda y Suzuki. También restauramos sillines de motos clásicas con el patrón de época.",
+    image: "realSillinCafeRacer",
+    heroImage: "realSillinCafeRacer2",
     deliverables: [
       "Perfilado de espuma en dos densidades para repartir el peso",
       "Forro en material tratado contra rayos UV",
@@ -122,6 +184,7 @@ export const services: Service[] = [
     facts: [
       { label: "Tiempo típico", value: "3 a 7 días" },
       { label: "Materiales", value: "Vinilo náutico · cuero · espuma de alta densidad · hilo encerado" },
+      { label: "Marcas más atendidas", value: "AKT · Bajaj · Yamaha · Honda · Suzuki" },
       { label: "Cobertura", value: "Recepción en el taller · servicio para talleres de motos" },
       { label: "Garantía", value: "12 meses en costura y material" },
     ],
@@ -129,8 +192,8 @@ export const services: Service[] = [
       {
         id: "sillines",
         title: "Sillines individuales",
-        body: "El caso más común: sillín roto o duro. Rehacemos la base, corregimos la forma para que reparta el peso y forramos en material antideslizante tratado.",
-        image: "projMoto",
+        body: "El caso más común: sillín roto o duro, sea AKT, Bajaj, Yamaha, Honda, Suzuki o cualquier otra marca. Rehacemos la base, corregimos la forma para que reparta el peso y forramos en material antideslizante tratado.",
+        image: "realSillinMotoRosa",
       },
       {
         id: "biplaza",
@@ -159,7 +222,7 @@ export const services: Service[] = [
     ],
   },
   {
-    index: "03",
+    index: "04",
     slug: "carpas-para-negocio",
     title: "Carpas y toldos para negocio",
     menuLabel: "Carpas y toldos",
@@ -218,18 +281,18 @@ export const services: Service[] = [
     ],
   },
   {
-    index: "04",
+    index: "05",
     slug: "forros",
-    title: "Forros a la medida",
-    menuLabel: "Forros a la medida",
-    scope: "Sillas · muebles · equipos",
+    title: "Forros para muebles y equipos",
+    menuLabel: "Forros para muebles y equipos",
+    scope: "Muebles · equipos · náuticos",
     tagline: "Nada universal: el patrón se levanta sobre la pieza real.",
     description:
       "Forros con patrón propio para cada pieza. Nada universal: se corta sobre la medida real del objeto.",
     standfirst:
-      "El forro universal nunca queda: hace bolsas, se sale y se rompe por el mismo sitio. Levantamos el patrón sobre el objeto real — una silla, un sofá, un equipo, el asiento de un carro — y confeccionamos en tela técnica con cremallera para poder sacarlo y lavarlo. Cuando son varios iguales, producimos en serie con un patrón maestro.",
-    image: "svcForros",
-    heroImage: "svcForros",
+      "El forro universal nunca queda: hace bolsas, se sale y se rompe por el mismo sitio. Levantamos el patrón sobre el objeto real — una silla, un sofá, un equipo — y confeccionamos en tela técnica con cremallera para poder sacarlo y lavarlo. Cuando son varios iguales, producimos en serie con un patrón maestro. ¿Busca forros para los asientos de su carro? Vea nuestro servicio de forros para carros.",
+    image: "realForroSillaOficina",
+    heroImage: "realForroSillaOficina",
     deliverables: [
       "Patrón levantado sobre la pieza, no adaptado",
       "Tela técnica transpirable o impermeable según el uso",
@@ -247,7 +310,7 @@ export const services: Service[] = [
       {
         id: "sillas",
         title: "Forros de sillas",
-        body: "Sillas de comedor, de oficina o de carro. Patrón ajustado a la forma real, con caída limpia y sin bolsas.",
+        body: "Sillas de comedor o de oficina. Patrón ajustado a la forma real, con caída limpia y sin bolsas.",
         image: "svcForros",
       },
       {

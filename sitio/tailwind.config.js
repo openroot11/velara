@@ -7,7 +7,7 @@ export default {
         /* --------------------------------------------------------------------
          * VELARA palette — modelada sobre la referencia de Spradling / Proquinal:
          * fondo blanco, tinta casi negra, gris cálido para paneles y un acento
-         * verde azulado (teal / petróleo). El acento nunca es el color dominante.
+         * naranja vibrante. El acento nunca es el color dominante.
          * ------------------------------------------------------------------ */
 
         /* Tinta: texto, header y footer. */
@@ -36,17 +36,17 @@ export default {
         },
 
         /**
-         * Acento verde azulado. Sobre blanco:
-         *  - `accent` (4.8:1) vale para títulos grandes, filetes y marcadores.
-         *  - `accent.deep` (7.6:1) es el único que pasa AA en texto pequeño.
-         * Sobre tinta, `accent.soft` (6.3:1) es el válido.
+         * Acento naranja vibrante. Sobre blanco:
+         *  - `accent` vale para títulos grandes, filetes y marcadores.
+         *  - `accent.deep` es el que pasa AA en texto pequeño.
+         * Sobre tinta, `accent.soft` es el válido.
          */
         accent: {
-          DEFAULT: "#0E7C7C",
-          deep: "#0A5A5A",
-          dark: "#063E3E",
-          soft: "#5AA9A9",
-          pale: "#E3F0F0",
+          DEFAULT: "#FF5A1F",
+          deep: "#C7420E",
+          dark: "#8C2E0A",
+          soft: "#FF8F5E",
+          pale: "#FFE7DA",
         },
       },
       fontFamily: {
