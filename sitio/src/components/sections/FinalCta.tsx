@@ -1,5 +1,6 @@
 import { images } from "@/data/images";
 import { site } from "@/data/site";
+import { BrandStripes } from "@/components/ui/BrandStripes";
 import { Cta } from "@/components/ui/Cta";
 import { LineReveal } from "@/components/ui/LineReveal";
 import { Reveal } from "@/components/ui/Reveal";
@@ -22,6 +23,7 @@ export default function FinalCta() {
         draggable={false}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/40" />
+      <BrandStripes />
 
       <div className="shell relative w-full py-24">
         <Reveal from="up" distance={14}>
@@ -31,7 +33,7 @@ export default function FinalCta() {
         <LineReveal
           as="h2"
           lines={["Cuéntenos", "qué hay que cubrir."]}
-          className="mt-5 font-display text-display-lg font-light text-white"
+          className="mt-5 font-display text-display-lg font-bold text-white"
         />
 
         <Reveal from="up" distance={16} delay={0.1}>

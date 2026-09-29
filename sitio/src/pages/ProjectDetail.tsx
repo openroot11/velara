@@ -30,7 +30,7 @@ export default function ProjectDetail() {
       <section className="bg-paper py-section">
         <div className="shell grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
           <Reveal from="up" distance={22}>
-            <p className="font-display text-display-sm font-light leading-snug text-ink">
+            <p className="font-display text-display-sm font-bold leading-snug text-ink">
               {project.intro}
             </p>
           </Reveal>
@@ -100,7 +100,7 @@ export default function ProjectDetail() {
             <div className="absolute inset-0 bg-ink/40" />
             <div className="shell absolute inset-0 flex flex-col items-center justify-center text-center">
               <span className="overline text-white/65">Siguiente proyecto</span>
-              <span className="mt-4 font-display text-display-md font-light text-white transition-colors duration-300 group-hover:text-accent-soft">
+              <span className="mt-4 font-display text-display-md font-bold text-white transition-colors duration-300 group-hover:text-accent-soft">
                 {next.subject}
               </span>
               <span className="mt-2 text-[0.85rem] uppercase tracking-[0.12em] text-accent-soft">
@@ -114,7 +114,7 @@ export default function ProjectDetail() {
       {/* CTA */}
       <section className="bg-paper py-section">
         <div className="shell flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
-          <h2 className="max-w-xl font-display text-display-sm font-light text-ink">
+          <h2 className="max-w-xl font-display text-display-sm font-bold text-ink">
             ¿Tiene un trabajo parecido?
           </h2>
           <Cta href={`/cotizar?servicio=${project.categorySlug}`} variant="solid" className="shrink-0">

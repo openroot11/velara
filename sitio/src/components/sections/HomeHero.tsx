@@ -94,7 +94,7 @@ export default function HomeHero() {
             className="max-w-3xl"
           >
             <span className="overline text-accent-soft">{slide.eyebrow}</span>
-            <h1 className="mt-5 font-display text-display-xl font-light text-white">{slide.title}</h1>
+            <h1 className="mt-5 font-display text-display-xl font-bold text-white">{slide.title}</h1>
             <p className="mt-6 max-w-xl text-pretty text-[1.05rem] leading-relaxed text-white/75">
               {slide.text}
             </p>

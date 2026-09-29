@@ -82,7 +82,7 @@ export default function Servicios() {
 
       <section className="bg-accent-deep text-white">
         <div className="shell flex flex-col items-start gap-6 py-14 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-xl text-pretty font-display text-2xl font-light leading-snug">
+          <p className="max-w-xl text-pretty font-display text-2xl font-bold leading-snug">
             ¿No sabe en cuál de los cinco entra su trabajo?
           </p>
           <Cta href="/cotizar" variant="outline-light" className="shrink-0">

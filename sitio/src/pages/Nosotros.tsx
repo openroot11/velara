@@ -105,7 +105,7 @@ export default function Nosotros() {
         <div className="shell grid gap-8 py-16 md:grid-cols-[1.3fr_1fr] md:items-center">
           <div>
             <span className="overline text-accent-soft">Trabaja con nosotros</span>
-            <h2 className="mt-4 font-display text-display-sm font-light">Buscamos manos con oficio</h2>
+            <h2 className="mt-4 font-display text-display-sm font-bold">Buscamos manos con oficio</h2>
             <p className="mt-4 max-w-lg text-pretty text-[1rem] leading-relaxed text-white/70">
               Tapiceros, costureros y ayudantes de taller que quieran hacer las cosas bien y aprender
               los cinco oficios. Si es lo suyo, escríbanos con lo que sabe hacer.

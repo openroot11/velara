@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { site } from "@/data/site";
 import { services } from "@/data/services";
 import { materialFamilies } from "@/data/materials";
-import { Logo } from "@/components/ui/Logo";
 import { Cta } from "@/components/ui/Cta";
 
 const taller = [
@@ -37,9 +36,9 @@ export default function Footer() {
   return (
     <footer className="relative bg-ink-900 text-white">
       {/* --- Franja de llamada a la acción --- */}
-      <div className="bg-accent-deep">
+      <div className="bg-accent">
         <div className="shell flex flex-col items-start gap-6 py-12 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-xl text-pretty font-display text-2xl font-light leading-snug text-white sm:text-[1.7rem]">
+          <p className="max-w-xl text-pretty font-display text-2xl font-bold leading-snug text-white sm:text-[1.7rem]">
             Cuéntenos qué hay que cubrir y le pasamos precio el mismo día hábil.
           </p>
           <Cta href={site.cta.href} variant="outline-light" className="shrink-0">
@@ -51,7 +50,7 @@ export default function Footer() {
       {/* --- Columnas --- */}
       <div className="shell grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:py-20">
         <div className="flex flex-col gap-5">
-          <Logo tone="light" />
+          <img src="/brand/logo-eslogan-negativo.svg" alt={site.name} className="block h-[42px] w-auto self-start" />
           <p className="max-w-xs text-[0.92rem] leading-relaxed text-white/60">{site.tagline}</p>
           <a
             href={site.location.mapHref}

@@ -1,4 +1,5 @@
 import { images, type ImageKey } from "@/data/images";
+import { BrandStripes } from "@/components/ui/BrandStripes";
 import { Reveal } from "./Reveal";
 import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 import { cn } from "@/lib/cn";
@@ -66,6 +67,7 @@ export function PageHero({ breadcrumb, eyebrow, title, standfirst, image, band =
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/45 to-ink/25" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/70 to-transparent" />
+        <BrandStripes className="w-[min(28vw,360px)] opacity-90" />
 
         <div className="shell relative w-full pb-12 pt-32 sm:pb-16">
           <Reveal from="up" distance={14}>
@@ -77,7 +79,7 @@ export function PageHero({ breadcrumb, eyebrow, title, standfirst, image, band =
             </Reveal>
           )}
           <Reveal from="up" distance={22} delay={0.1}>
-            <h1 className={cn("mt-4 max-w-4xl font-display text-display-lg font-light text-white")}>
+            <h1 className={cn("mt-4 max-w-4xl font-display text-display-lg font-bold text-white")}>
               {title}
             </h1>
           </Reveal>

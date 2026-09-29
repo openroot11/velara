@@ -45,7 +45,7 @@ export default function Testimonials() {
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
-              <p className="mx-auto max-w-2xl font-display text-display-sm font-light text-ink">
+              <p className="mx-auto max-w-2xl font-display text-display-sm font-bold text-ink">
                 <span aria-hidden className="text-accent">“</span>
                 {current.quote}
                 <span aria-hidden className="text-accent">”</span>

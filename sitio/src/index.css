@@ -49,9 +49,9 @@
 
   h1, h2, h3, h4 {
     font-family: theme("fontFamily.display");
-    font-weight: 400;
+    font-weight: 700;
+    letter-spacing: -0.02em;
     text-wrap: balance;
-    font-variation-settings: "SOFT" 0, "WONK" 0;
   }
 
   :focus-visible {
@@ -162,15 +162,15 @@
   }
 
   .btn-teal {
-    background: theme("colors.accent.deep");
+    background: theme("colors.accent.DEFAULT");
     color: #fff;
   }
   .btn-teal:hover {
-    background: theme("colors.accent.dark");
+    background: theme("colors.accent.deep");
   }
 
   .btn-outline-dark {
-    border-color: rgba(27, 27, 27, 0.3);
+    border-color: rgba(11, 11, 11, 0.3);
     color: theme("colors.ink.DEFAULT");
   }
   .btn-outline-dark:hover {

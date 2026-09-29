@@ -127,7 +127,7 @@ export default function ServicioDetail() {
       {/* --- CTA --- */}
       <section className="bg-ink text-white">
         <div className="shell flex flex-col items-start gap-6 py-16 md:flex-row md:items-center md:justify-between">
-          <h2 className="max-w-xl font-display text-display-sm font-light">
+          <h2 className="max-w-xl font-display text-display-sm font-bold">
             ¿Tiene un trabajo de {service.menuLabel.toLowerCase()}?
           </h2>
           <Cta href={`/cotizar?servicio=${service.slug}`} variant="teal" className="shrink-0">
