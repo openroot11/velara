@@ -11,7 +11,7 @@
  *
  * PENDIENTE: reemplazar por la línea real antes de publicar.
  */
-const WHATSAPP_NUMBER = "573225640747";
+const WHATSAPP_NUMBER = "573003666093";
 
 export const site = {
   name: "VELARA",
@@ -24,10 +24,10 @@ export const site = {
   foundedYear: 2009,
 
   contact: {
-    phoneDisplay: "+57 322 564 0747",
-    phoneHref: "tel:+573225640747",
+    phoneDisplay: "+57 300 366 6093",
+    phoneHref: "tel:+573003666093",
     whatsappNumber: WHATSAPP_NUMBER,
-    whatsappDisplay: "+57 322 564 0747",
+    whatsappDisplay: "+57 300 366 6093",
     whatsappHref: `https://wa.me/${WHATSAPP_NUMBER}`,
     email: "velarataller@gmail.com",
     emailHref: "mailto:velarataller@gmail.com",
