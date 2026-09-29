@@ -1,0 +1,11 @@
+FOTOGRAFÍAS
+===========
+La carpeta Referencias_de_estilo contiene recortes de baja resolución tomados de las imágenes guía.
+Sirven para mostrar el estilo buscado y no se deben usar en piezas finales.
+
+Estilo fotográfico de VELARA:
+· Trabajos, materiales y procesos reales del taller.
+· Alto contraste, luz lateral, fondos oscuros, color ligeramente desaturado.
+· Detalles: costuras, texturas del cuero, acabados, manos trabajando.
+· Recorte diagonal a 47,4°, el ángulo del isotipo, cuando la pieza lo pida.
+Recomendado: fotografías de 3000 px o más en su lado largo, sin marcas de agua.

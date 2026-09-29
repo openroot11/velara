@@ -1,0 +1,48 @@
+VELARA — IDENTIDAD VISUAL · Versión 1.0 (septiembre de 2026)
+==================================================================
+
+CONTENIDO
+01_LOGO                Logo principal, logo con eslogan e isotipo, en 4 versiones de color:
+                       positivo (fondos claros), negativo (fondos oscuros), mono-negro y mono-blanco.
+                         SVG  → web y pantalla (RGB), contorno exacto sin márgenes.
+                         PNG  → fondo transparente, en 3 tamaños. PNG/Redes: avatares 1080 px.
+                         EPS  → imprenta, CMYK exacto.
+                         AI   → compatible con Illustrator (ver nota), CMYK exacto.
+02_PAPELERIA           Una carpeta por pieza con: PDF digital, vista previa PNG, SVG vectorial
+                       y sus editables (Word y, cuando aplica, Excel).
+                       Incluye también Tarjeta_Presentacion (versión oscura y clara).
+03_EDITABLES           AI (papelería en CMYK con sangrado), DOCX (Word), XLSX (Excel con fórmulas), INDD (ver LÉEME).
+04_PDF                 Impresion: CMYK, 3 mm de sangrado y marcas de corte (TrimBox/BleedBox definidos).
+                       Digital: RGB, tamaño final, para enviar por correo o WhatsApp.
+05_RECURSOS            Íconos (18, versión oscura y clara), patrones, texturas, fotografías de referencia
+                       y la tipografía Inter con su licencia.
+06_MANUAL_DE_MARCA     Manual_VELARA.pdf (9 páginas, índice navegable).
+
+COLORES
+                   HEX       RGB             CMYK (referencia)    Pantone (referencia)
+Blanco roto        #F2F0EA   242, 240, 234   3, 3, 7, 0           papel natural
+Rojo deportivo     #D71920   215, 25, 32     0, 100, 100, 5       485 C
+Negro carbón       #0B0B0B   11, 11, 11      60, 50, 50, 100      Black 6 C
+Grafito            #252525   37, 37, 37      0, 0, 0, 90          426 C
+Plata metálico     #A7A9AC   167, 169, 172   0, 0, 0, 40          Cool Gray 6 C
+Textos pequeños en negro: solo K 100. Valide los valores con una prueba de color de su imprenta.
+
+TIPOGRAFÍA
+Logotipo: letras personalizadas (nunca se escriben, siempre se usa el archivo del logo).
+Títulos y textos: Inter (Bold, SemiBold, Regular). Instálela desde 05_RECURSOS/Tipografias/Inter
+antes de abrir los Word y Excel para que se vean como el diseño.
+
+PENDIENTE ANTES DE IMPRIMIR
+Los datos entre corchetes son de ejemplo: NIT, dirección, teléfono, correo, sitio web y usuario de redes.
+  · Excel: se escriben una sola vez en la hoja "Empresa" y el encabezado se actualiza solo.
+  · Word: se reemplazan en el encabezado y el pie de página.
+  · PDF, AI y SVG: envíe los datos reales para volver a exportarlos.
+Fotografías: las incluidas son referencias de estilo de baja resolución; reemplácelas por fotos reales del taller.
+Símbolo ®: úselo solo cuando la marca esté registrada ante la SIC.
+
+NOTAS SOBRE FORMATOS
+· AI: son archivos en formato PDF con extensión .ai. Illustrator los abre y edita normalmente,
+  pero no traen capas con nombre ni mesas de trabajo como un .ai guardado desde Illustrator.
+· INDD: no se puede generar fuera de Adobe InDesign (ver 03_EDITABLES/INDD/LEEME.txt).
+· Factura: la factura legal en Colombia es electrónica y la emite su proveedor autorizado por la DIAN.
+  Este formato sirve como representación gráfica o soporte interno; valide los campos con su contador.

@@ -1,0 +1,11 @@
+INDD (Adobe InDesign)
+=====================
+El formato .indd es propietario y solo se puede crear desde Adobe InDesign; no es posible generarlo fuera de ese programa.
+
+Para trabajar en InDesign con esta papelería:
+1. Instale la tipografía Inter (05_RECURSOS/Tipografias/Inter).
+2. Cree un documento tamaño Carta (215,9 × 279,4 mm) con 3 mm de sangrado
+   (Recibo: 215,9 × 139,7 mm · Tarjeta: 90 × 50 mm).
+3. Use Archivo > Colocar con los PDF de 04_PDF/Impresion como guía, o importe los SVG de 02_PAPELERIA,
+   y los logos de 01_LOGO/EPS o 01_LOGO/AI (CMYK).
+4. Colores: vea la tabla CMYK / Pantone del LEEME principal.

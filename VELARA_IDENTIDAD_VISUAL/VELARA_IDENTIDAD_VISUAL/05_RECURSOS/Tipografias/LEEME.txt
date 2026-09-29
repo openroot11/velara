@@ -1,0 +1,5 @@
+TIPOGRAFÍA INTER
+================
+Inter es de uso libre, también comercial, bajo la licencia SIL Open Font License (ver Inter/LICENSE_OFL.txt).
+Instale los archivos .ttf de la carpeta Inter antes de abrir los editables (doble clic > Instalar).
+Pesos de la marca: Bold (títulos), SemiBold (etiquetas y destacados), Regular (textos).
