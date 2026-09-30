@@ -10,6 +10,7 @@ nota y `Ctrl+Shift+F` para buscar texto en todo el vault.
 
 ## Notas
 
+- [[info-velara]] — datos de la empresa: contacto, dirección, horario, servicios
 - [[proyecto-velara]] — qué es el proyecto, en qué estado está, qué falta
 - [[manual-de-marca]] — plataforma de marca, voz y tono, uso del logo, fotografía, aplicaciones
 - [[identidad-visual]] — paleta, tipografía, logo, gestos de diseño
