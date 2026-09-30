@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { images, type ImageKey } from "@/data/images";
 import { usePrefersReducedMotion } from "@/lib/hooks";
 import { cn } from "@/lib/cn";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 interface Slide {
   eyebrow: string;
@@ -16,9 +17,9 @@ interface Slide {
 /** Edite libremente los slides — títulos, textos, botones e imágenes. */
 const slides: Slide[] = [
   {
-    eyebrow: "Taller de cuero y tapicería",
-    title: "El oficio del cuero, en cada superficie.",
-    text: "Tapizado automotriz y de motos, carpas y toldos para negocio y forros a la medida. Cortado, cosido y montado a mano en Barranquilla.",
+    eyebrow: "Soluciones a medida",
+    title: "Soluciones a medida para tu vehículo y tu negocio.",
+    text: "Fabricamos forros, tapicería, carpas y soluciones personalizadas para vehículos, negocios y espacios.",
     cta: { label: "Ver servicios", to: "/servicios" },
     image: "heroInterior",
   },
@@ -102,9 +103,7 @@ export default function HomeHero() {
               <Link to={slide.cta.to} className="btn btn-teal">
                 {slide.cta.label}
               </Link>
-              <Link to="/cotizar" className="btn btn-outline-light">
-                Solicitar cotización
-              </Link>
+              <WhatsAppButton className="btn-outline-light !bg-transparent" />
             </div>
           </motion.div>
         </AnimatePresence>

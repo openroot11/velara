@@ -4,6 +4,7 @@ import { AnimatePresence, MotionConfig, motion } from "framer-motion";
 import SmoothScroll from "@/components/system/SmoothScroll";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import Home from "@/pages/Home";
 import { usePrefersReducedMotion } from "@/lib/hooks";
 import { captureAdAttribution } from "@/lib/adAttribution";
@@ -72,6 +73,7 @@ export default function App() {
           <Header />
           <AnimatedRoutes />
           <Footer />
+          <WhatsAppFloat />
         </div>
       </SmoothScroll>
     </MotionConfig>

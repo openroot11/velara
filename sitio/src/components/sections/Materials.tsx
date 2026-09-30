@@ -4,6 +4,13 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { Cta } from "@/components/ui/Cta";
 import { materials, materialFamilies } from "@/data/materials";
 
+const reasons = [
+  { title: "A medida", text: "Cada solución se adapta al proyecto." },
+  { title: "Fabricación", text: "Desarrollamos cada pieza según su necesidad." },
+  { title: "Instalación", text: "Cuando el trabajo lo requiere, lo montamos." },
+  { title: "Atención personalizada", text: "Cada cotización parte de entender su caso." },
+];
+
 /** Portada — anticipo del catálogo de materiales. */
 export default function Materials() {
   const featured = ["cuero-plena-flor", "vinilo-tecnico", "lona-acrilica", "hilo-encerado"]
@@ -40,6 +47,21 @@ export default function Materials() {
               <Cta href="/materiales" variant="solid">
                 Ver el catálogo completo
               </Cta>
+            </div>
+
+            <div className="mt-8 border-t border-smoke-line pt-8">
+              <span className="overline text-accent-deep">¿Por qué VELARA?</span>
+              <ul className="mt-5 grid gap-x-8 gap-y-5 sm:grid-cols-2">
+                {reasons.map((r) => (
+                  <li key={r.title} className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" aria-hidden />
+                    <div>
+                      <p className="text-[0.95rem] font-semibold text-ink">{r.title}</p>
+                      <p className="mt-0.5 text-[0.85rem] leading-relaxed text-smoke-dark">{r.text}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </Reveal>

@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { mainNav } from "@/data/navigation";
-import { site } from "@/data/site";
 import { Logo } from "@/components/ui/Logo";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { setScrollLocked } from "@/components/system/SmoothScroll";
 import { cn } from "@/lib/cn";
 import { MegaMenu } from "./MegaMenu";
@@ -113,12 +113,7 @@ export default function Header() {
               </svg>
             </button>
 
-            <Link
-              to={site.cta.href}
-              className="hidden rounded-full bg-white px-5 py-2.5 text-[0.78rem] font-semibold text-ink transition-colors hover:bg-accent-soft hover:text-ink sm:inline-block"
-            >
-              {site.cta.label}
-            </Link>
+            <WhatsAppButton className="!hidden !px-5 !py-2.5 text-[0.78rem] sm:!inline-flex" />
 
             <button
               type="button"

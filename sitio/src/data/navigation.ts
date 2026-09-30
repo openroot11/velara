@@ -198,7 +198,6 @@ export const mainNav: NavItem[] = [
           { label: "Cómo medir su vehículo", to: "/recursos/como-medir", description: "Lo que necesitamos para cotizar sin verlo." },
           { label: "Preguntas frecuentes", to: "/recursos/preguntas-frecuentes", description: "Tiempos, precios, garantía y traslados." },
           { label: "Glosario de materiales", to: "/recursos/glosario", description: "Plena flor, semianilina, denier, hidrófugo…" },
-          { label: "Antes y después", to: "/recursos/antes-y-despues", description: "Trabajos del taller, con su historia." },
         ],
       },
     ],

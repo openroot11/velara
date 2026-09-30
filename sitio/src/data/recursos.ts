@@ -136,21 +136,6 @@ export const resources: Resource[] = [
     ],
   },
   {
-    slug: "antes-y-despues",
-    title: "Antes y después",
-    kind: "Galería",
-    summary:
-      "Trabajos del taller con la foto de entrada y la de entrega, y una línea sobre qué se hizo.",
-    cover: "transformAfter",
-    readingTime: "2 min",
-    body: [
-      { type: "p", text: "La mejor forma de entender qué hacemos es ver una pieza antes y después de pasar por el taller. Reunimos los trabajos con su registro completo en la sección de proyectos." },
-      { type: "note", text: "Vea la galería completa en Proyectos: cada trabajo tiene la ficha técnica, el proceso paso a paso y las fotos de entrada y entrega." },
-      { type: "h2", text: "Lo que no se ve en la foto" },
-      { type: "p", text: "Un «después» limpio esconde el trabajo real: el diagnóstico pieza por pieza, el patronaje sobre el objeto, las espumas que se rehicieron por dentro. Por eso documentamos el proceso y se lo entregamos con la pieza." },
-    ],
-  },
-  {
     slug: "garantia-del-taller",
     title: "Garantía del taller",
     kind: "Legal",
