@@ -14,7 +14,7 @@ export default function Servicios() {
       <PageHero
         breadcrumb={[{ label: "Servicios" }]}
         eyebrow="Nuestro oficio"
-        title="Cinco oficios, un solo taller"
+        title="Cinco oficios para tu auto"
         standfirst="Cuero, vinilo y lona cortados a la medida de cada pieza. El mismo estándar de acabado para un asiento del conductor o para una flota entera."
         image="pageServicios"
         band

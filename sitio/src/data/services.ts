@@ -7,6 +7,10 @@ export interface ServiceApplication {
   title: string;
   body: string;
   image: ImageKey;
+  /** Opcional: segunda foto que aparece al pasar el mouse (p. ej. el equipo sin forro). */
+  hoverImage?: ImageKey;
+  /** Etiquetas de la foto normal y de la que aparece al pasar el mouse. */
+  hoverLabels?: [string, string];
 }
 
 export interface Service {
@@ -48,14 +52,14 @@ export const services: Service[] = [
     slug: "forros-para-carros",
     title: "Forros para carros",
     menuLabel: "Forros para carros",
-    scope: "Asientos · timón · consola",
+    scope: "Asientos · puertas · techo",
     tagline: "El forro que se ajusta a su carro, no al revés.",
     description:
-      "Forros a la medida para asientos, timón y consola. Patrón levantado sobre su carro — no una talla genérica de tienda — con entrega rápida.",
+      "Forros a la medida para asientos, puertas y techo. Patrón levantado sobre su carro — no una talla genérica de tienda — con entrega rápida.",
     standfirst:
       "Un forro de talla única nunca queda: hace bolsas en la espalda, se corre con el uso y tapa los controles. Levantamos el patrón sobre los asientos reales de su carro, cortamos y cosemos a la medida, y lo entregamos listo para instalar el mismo día, sin herramientas. Es la opción más rápida y económica para proteger o renovar el interior sin tocar la tapicería original.",
-    image: "realForroSpark",
-    heroImage: "realForroKia",
+    image: "nvForroAsiento",
+    heroImage: "nvAsientoCueroVw",
     deliverables: [
       "Patrón levantado sobre los asientos reales del carro",
       "Corte y costura en tela técnica o cuerina, a elección",
@@ -74,7 +78,7 @@ export const services: Service[] = [
         id: "delanteros",
         title: "Asientos delanteros",
         body: "Los que más se desgastan. Forro a la medida del respaldo y la silla, con aberturas para los controles laterales y el cinturón.",
-        image: "transformDetail",
+        image: "nvAsientoGris",
       },
       {
         id: "traseros",
@@ -92,7 +96,7 @@ export const services: Service[] = [
         id: "juego-completo",
         title: "Juego completo",
         body: "Sedán, camioneta o taxi: todo el interior en un solo pedido, con el mismo patrón y material para que no se note la diferencia entre piezas.",
-        image: "projTaxi",
+        image: "nvForroVw",
       },
       {
         id: "flotas",
@@ -113,8 +117,8 @@ export const services: Service[] = [
       "Sillas, paneles, techos y timones. Patronaje a la medida del vehículo y costura que respeta el diseño original.",
     standfirst:
       "Rehacemos interiores de carro sin adaptar patrones genéricos: cada silla, panel y techo se traza sobre la pieza real del vehículo. Igualamos hilos, pasos de costura y perforaciones al diseño de fábrica, y conservamos lo que todavía sirve. Trabajamos autos particulares, camionetas de trabajo y flotas enteras.",
-    image: "realTapizadoVerdeTerminado",
-    heroImage: "realTapizadoCueroProceso",
+    image: "nvTapiceriaVelara",
+    heroImage: "nvCosturaRoja",
     deliverables: [
       "Diagnóstico superficie por superficie",
       "Patronaje sobre el vehículo, sin moldes universales",
@@ -133,7 +137,7 @@ export const services: Service[] = [
         id: "sillas",
         title: "Sillas y asientos",
         body: "Desde una silla del conductor gastada hasta el juego completo. Reconstruimos espuma, forma y forro, con doble pespunte en las zonas de más roce.",
-        image: "transformDetail",
+        image: "nvDetalleCostura",
       },
       {
         id: "paneles",
@@ -283,59 +287,50 @@ export const services: Service[] = [
   {
     index: "05",
     slug: "forros",
-    title: "Forros para muebles y equipos",
-    menuLabel: "Forros para muebles y equipos",
-    scope: "Muebles · equipos · náuticos",
-    tagline: "Nada universal: el patrón se levanta sobre la pieza real.",
+    title: "Forros de protección para equipos",
+    menuLabel: "Forros para equipos",
+    scope: "Equipos médicos · audio · maquinaria",
+    tagline: "Cada equipo, con su forro hecho a la medida.",
     description:
-      "Forros con patrón propio para cada pieza. Nada universal: se corta sobre la medida real del objeto.",
+      "Forros de protección para equipos médicos, equipos de sonido y maquinaria, hechos sobre la medida real de cada pieza.",
     standfirst:
-      "El forro universal nunca queda: hace bolsas, se sale y se rompe por el mismo sitio. Levantamos el patrón sobre el objeto real — una silla, un sofá, un equipo — y confeccionamos en tela técnica con cremallera para poder sacarlo y lavarlo. Cuando son varios iguales, producimos en serie con un patrón maestro. ¿Busca forros para los asientos de su carro? Vea nuestro servicio de forros para carros.",
-    image: "realForroSillaOficina",
-    heroImage: "realForroSillaOficina",
+      "Un forro genérico no protege: queda flojo, se sale y deja pasar el polvo. Levantamos el patrón sobre el equipo real —una camilla, una consola de sonido, una máquina— y lo confeccionamos en el material que pide su uso: lavable para consultorios, acolchado para el transporte o impermeable para exteriores. Cuando son varios equipos iguales, los producimos en serie con un patrón maestro.",
+    image: "nvForrosProteccion",
+    heroImage: "nvForrosProteccion",
     deliverables: [
-      "Patrón levantado sobre la pieza, no adaptado",
-      "Tela técnica transpirable o impermeable según el uso",
-      "Cremallera reforzada para quitar y lavar sin desmontar",
-      "Malla en las zonas de contacto para que no se acumule el calor",
-      "Juego de repuesto opcional",
+      "Patrón levantado sobre el equipo real, no adaptado",
+      "Material según el uso: lavable, acolchado o impermeable",
+      "Aberturas para cables, manijas y controles donde se necesiten",
+      "Cremallera, velcro o cordón para poner y quitar sin esfuerzo",
+      "Producción en serie para varios equipos iguales",
     ],
     facts: [
       { label: "Tiempo típico", value: "3 días a 2 semanas" },
-      { label: "Materiales", value: "Tela técnica transpirable · vinilo · malla · cremallera reforzada" },
-      { label: "Cobertura", value: "Recepción en el taller · recogida para lotes" },
+      { label: "Materiales", value: "Vinilo lavable · lona impermeable · acolchado · cremallera reforzada" },
+      { label: "Cobertura", value: "Recepción en el taller · medición en su sitio para equipos grandes" },
       { label: "Garantía", value: "6 meses en costura y cremallera" },
     ],
     applications: [
       {
-        id: "sillas",
-        title: "Forros de sillas",
-        body: "Sillas de comedor o de oficina. Patrón ajustado a la forma real, con caída limpia y sin bolsas.",
-        image: "svcForros",
+        id: "equipos-medicos",
+        title: "Equipos médicos",
+        body: "Forros para camillas, sillas de consultorio, monitores y equipos de diagnóstico, en material lavable que se limpia y desinfecta con facilidad.",
+        image: "nvForrosProteccion",
       },
       {
-        id: "muebles",
-        title: "Fundas de muebles",
-        body: "Sofás, poltronas y camas. Fundas desmontables que protegen del sol y las mascotas y se lavan en casa.",
-        image: "procPattern",
+        id: "equipos-de-sonido",
+        title: "Equipos de sonido",
+        body: "Fundas para parlantes, consolas, amplificadores y cabinas. Protegen del polvo, de los golpes del transporte y de la intemperie en eventos.",
+        image: "nvAudioConForro",
+        hoverImage: "nvAudioSinForro",
       },
       {
-        id: "equipos",
-        title: "Cobertores de equipos",
-        body: "Cobertores a la medida para maquinaria, motos, parrillas o equipos a la intemperie, en lona tratada con ojales y cordón.",
-        image: "motosParqueadas",
-      },
-      {
-        id: "serie",
-        title: "Forros en serie",
-        body: "Flotas y salas de espera: un patrón maestro probado en servicio y luego la producción de todos los juegos, idénticos entre sí.",
-        image: "projFlota",
-      },
-      {
-        id: "nauticos",
-        title: "Forros náuticos",
-        body: "Cojinería y cobertores de lancha en vinilo náutico y espuma de célula cerrada, resistente al agua salada y al sol directo.",
-        image: "projTaxi",
+        id: "maquinaria",
+        title: "Maquinaria pesada",
+        body: "Forros a la medida para máquinas industriales y equipos de trabajo, con tapas de acceso que se abren sin retirar todo el forro. Protegen del polvo, la humedad y el sol.",
+        image: "nvMaquinariaConForro",
+        hoverImage: "nvMaquinariaAbierta",
+        hoverLabels: ["Forro cerrado", "Forro abierto"],
       },
     ],
   },

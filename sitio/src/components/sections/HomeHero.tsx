@@ -17,25 +17,39 @@ interface Slide {
 /** Edite libremente los slides — títulos, textos, botones e imágenes. */
 const slides: Slide[] = [
   {
-    eyebrow: "Soluciones a medida",
-    title: "Soluciones a medida para tu vehículo y tu negocio.",
-    text: "Fabricamos forros, tapicería, carpas y soluciones personalizadas para vehículos, negocios y espacios.",
+    eyebrow: "Forros y tapicería",
+    title: "Tapicería y forros para tu auto.",
+    text: "Fabricamos forros, tapicería, carpas de fachada y soluciones personalizadas para vehículos, negocios y espacios.",
     cta: { label: "Ver servicios", to: "/servicios" },
-    image: "heroInterior",
+    image: "nvCarruselForros",
   },
   {
-    eyebrow: "Catálogo de materiales",
-    title: "Materiales que aguantan el Caribe.",
-    text: "Cuero de plena flor, vinilo náutico, lona acrílica y telas técnicas — cada uno con su ficha, sus usos y su cuidado.",
-    cta: { label: "Ver el catálogo", to: "/materiales" },
-    image: "pageMateriales",
+    eyebrow: "Tapizado de motos",
+    title: "Sillines de moto hechos a la medida.",
+    text: "Reconstruimos el sillín desde la base: espuma, forma y material para aguantar sol, lluvia y kilómetros.",
+    cta: { label: "Ver tapizado de motos", to: "/servicios/tapizado-de-motos" },
+    image: "svcMoto",
   },
   {
-    eyebrow: "Su próximo trabajo",
-    title: "Cuéntenos qué hay que cubrir.",
-    text: "Un asiento, una moto, una terraza o una flota entera. Le decimos qué hace falta, cuánto tarda y cuánto cuesta el mismo día hábil.",
-    cta: { label: "Solicitar cotización", to: "/cotizar" },
+    eyebrow: "Carpas y toldos",
+    title: "Toldos y carpas para su negocio.",
+    text: "Lona técnica cortada y reforzada a la medida. Medimos en su local, confeccionamos y montamos para que aguante la intemperie.",
+    cta: { label: "Ver carpas y toldos", to: "/servicios/carpas-para-negocio" },
     image: "svcCarpas",
+  },
+  {
+    eyebrow: "Forros de protección",
+    title: "Forros para equipos médicos y de audio.",
+    text: "Protegemos equipos de consultorio, de sonido y de trabajo con forros hechos sobre la medida real de cada pieza.",
+    cta: { label: "Ver forros para equipos", to: "/servicios/forros" },
+    image: "nvForrosProteccion",
+  },
+  {
+    eyebrow: "Servicios para autos",
+    title: "Todo el interior de su auto, en un solo taller.",
+    text: "Forros, tapicería de sillas, puertas, techos y timón. Le decimos qué hace falta, cuánto tarda y cuánto cuesta.",
+    cta: { label: "Ver tapizado automotriz", to: "/servicios/tapizado-automotriz" },
+    image: "nvUltimoCarrusel",
   },
 ];
 

@@ -57,7 +57,7 @@ export const site = {
   newsletter: {
     title: "Boletín",
     blurb:
-      "Trabajos nuevos, guías de cuidado y avisos de disponibilidad de materiales. Un correo al mes, sin relleno.",
+      "Trabajos nuevos y guías de cuidado. Un correo al mes, sin relleno.",
     placeholder: "Su correo",
     action: "Suscribirme",
   },

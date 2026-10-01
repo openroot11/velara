@@ -101,7 +101,7 @@ export const resources: Resource[] = [
     title: "Preguntas frecuentes",
     kind: "Preguntas frecuentes",
     summary:
-      "Tiempos, precios, garantía, traslados y materiales — lo que más nos preguntan antes de empezar.",
+      "Tiempos, precios, garantía y traslados — lo que más nos preguntan antes de empezar.",
     cover: "craftTools",
     readingTime: "6 min",
     body: [
@@ -113,26 +113,6 @@ export const resources: Resource[] = [
       { type: "qa", q: "¿Puedo llevar mi propio material?", a: "Sí, pero revisamos que sirva para el uso antes de cortar. Si el material no aguanta, se lo decimos: preferimos perder la venta del material que rehacer el trabajo." },
       { type: "qa", q: "¿Trabajan para otros talleres?", a: "Sí. Damos servicio de confección y tapizado a talleres de motos, latonería y concesionarios, con tiempos y precios de mayorista." },
       { type: "qa", q: "¿Hacen el trabajo el mismo día?", a: "Casos puntuales sí (un descosido, un parche, una cremallera). Un trabajo hecho como debe ser necesita desarmar, patronar, coser y montar: eso no se hace bien en una tarde." },
-    ],
-  },
-  {
-    slug: "glosario",
-    title: "Glosario de materiales",
-    kind: "Glosario",
-    summary:
-      "Plena flor, semianilina, denier, hidrófugo, Martindale — qué significan los términos que usamos en las cotizaciones.",
-    cover: "matVinyl",
-    readingTime: "5 min",
-    body: [
-      { type: "p", text: "En las cotizaciones aparecen términos técnicos. Aquí está lo que quieren decir, sin adornos." },
-      { type: "term", term: "Plena flor", def: "La capa superior de la piel, con su superficie natural intacta (sin lijar). Es la más resistente y la que mejor envejece. Lo contrario es el cuero «corregido», al que se le lija la flor y se le imprime un grano artificial." },
-      { type: "term", term: "Anilina / semianilina", def: "Anilina: cuero teñido con tinte transparente, sin capa de pigmento; tacto natural, poco resistente a manchas. Semianilina: lleva una capa fina de pigmento que empareja el color y protege, sin perder tacto." },
-      { type: "term", term: "Cuerina / vinilo", def: "Material sintético: una capa de PVC o poliuretano sobre una base textil. No es cuero. Bien hecho, aguanta el uso diario mejor que muchos cueros y se limpia con un paño." },
-      { type: "term", term: "Denier / dtex", def: "Medida del grosor del hilo con que se teje una lona o tela. Más denier, hilo más grueso y tejido más resistente al desgarro. Una lona de camión ronda los 1100 dtex." },
-      { type: "term", term: "Martindale", def: "Prueba de resistencia a la abrasión: se frota el material hasta que se desgasta y se cuentan los ciclos. Un tapizado residencial normal pide 25.000 ciclos; uno de uso intenso, 100.000 o más." },
-      { type: "term", term: "Hidrófugo", def: "Tratamiento que hace que el agua resbale en gotas en vez de empapar el tejido. No es lo mismo que impermeable: una lona hidrófuga puede dejar pasar agua a presión; una impermeable, no." },
-      { type: "term", term: "Solución teñida", def: "La fibra se tiñe antes de tejerla, con el color en toda su masa. Aguanta años de sol sin decolorarse, a diferencia del tejido teñido por encima." },
-      { type: "term", term: "Célula cerrada", def: "Tipo de espuma cuyas burbujas no se comunican, así que no absorbe agua. Es la que va en cojinería náutica y de exterior." },
     ],
   },
   {

@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { navIndex } from "@/data/navigation";
 import { services } from "@/data/services";
-import { materials } from "@/data/materials";
 import { projects } from "@/data/projects";
 import { resources } from "@/data/recursos";
 
@@ -25,12 +24,6 @@ const INDEX: Entry[] = [
       description: a.body.slice(0, 90) + "…",
     })),
   ),
-  ...materials.map((m) => ({
-    label: m.name,
-    to: `/materiales/${m.slug}`,
-    section: "Materiales",
-    description: m.summary,
-  })),
   ...projects.map((p) => ({
     label: `${p.subject} — ${p.title}`,
     to: `/proyectos/${p.slug}`,
@@ -136,7 +129,7 @@ export function SearchOverlay({ open, onClose }: { open: boolean; onClose: () =>
                   ref={inputRef}
                   value={q}
                   onChange={(e) => setQ(e.target.value)}
-                  placeholder="Servicios, materiales, proyectos, guías…"
+                  placeholder="Servicios, proyectos, guías…"
                   className="mt-4 w-full border-b border-white/25 bg-transparent pb-4 font-display text-2xl text-white outline-none placeholder:text-white/35 focus:border-accent-soft sm:text-3xl"
                 />
               </form>

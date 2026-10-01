@@ -92,14 +92,12 @@ export const mainNav: NavItem[] = [
         ],
       },
       {
-        label: "Forros para muebles y equipos",
+        label: "Forros para equipos",
         to: "/servicios/forros",
         links: [
-          { label: "Forros de sillas", to: "/servicios/forros#sillas" },
-          { label: "Fundas de muebles", to: "/servicios/forros#muebles" },
-          { label: "Cobertores de equipos", to: "/servicios/forros#equipos" },
-          { label: "Forros en serie", to: "/servicios/forros#serie" },
-          { label: "Forros náuticos", to: "/servicios/forros#nauticos" },
+          { label: "Equipos médicos", to: "/servicios/forros#equipos-medicos" },
+          { label: "Equipos de sonido", to: "/servicios/forros#equipos-de-sonido" },
+          { label: "Maquinaria pesada", to: "/servicios/forros#maquinaria" },
         ],
       },
     ],
@@ -107,66 +105,12 @@ export const mainNav: NavItem[] = [
       {
         label: "Ver todos los servicios",
         to: "/servicios",
-        blurb: "Los cinco oficios del taller, con sus tiempos y materiales.",
+        blurb: "Los cinco oficios del taller, con sus tiempos y alcances.",
       },
       {
         label: "¿No sabe cuál es el suyo?",
         to: "/cotizar",
         blurb: "Cuéntenos qué hay que cubrir y lo revisamos con usted.",
-      },
-    ],
-  },
-  {
-    label: "Materiales",
-    to: "/materiales",
-    layout: "mega",
-    columns: [
-      {
-        label: "Cueros",
-        to: "/materiales?familia=cueros",
-        links: [
-          { label: "Plena flor", to: "/materiales/cuero-plena-flor" },
-          { label: "Semianilina", to: "/materiales/cuero-semianilina" },
-          { label: "Nobuck y ante", to: "/materiales/ante" },
-        ],
-      },
-      {
-        label: "Vinilos y cuerinas",
-        to: "/materiales?familia=vinilos",
-        links: [
-          { label: "Cuerina técnica", to: "/materiales/vinilo-tecnico" },
-          { label: "Vinilo náutico", to: "/materiales/vinilo-nautico" },
-          { label: "Microfibra Alcántara", to: "/materiales/alcantara" },
-        ],
-      },
-      {
-        label: "Exteriores",
-        to: "/materiales?familia=exteriores",
-        links: [
-          { label: "Lona acrílica", to: "/materiales/lona-acrilica" },
-          { label: "Lona de PVC", to: "/materiales/lona-pvc" },
-          { label: "Telas técnicas", to: "/materiales/telas-tecnicas" },
-        ],
-      },
-      {
-        label: "Herrajes e hilos",
-        to: "/materiales?familia=herrajes",
-        links: [
-          { label: "Hilo encerado", to: "/materiales/hilo-encerado" },
-          { label: "Cremalleras y broches", to: "/materiales/herrajes" },
-        ],
-      },
-    ],
-    feature: [
-      {
-        label: "Ver catálogo completo",
-        to: "/materiales",
-        blurb: "Todos los materiales con su ficha técnica y sus usos.",
-      },
-      {
-        label: "Pedir muestras físicas",
-        to: "/cotizar",
-        blurb: "Le llevamos las muestras al taller o a su local antes de cortar.",
       },
     ],
   },
@@ -197,7 +141,6 @@ export const mainNav: NavItem[] = [
           { label: "Guía de cuidado del cuero", to: "/recursos/cuidado-del-cuero", description: "Limpieza, hidratación y qué no hacer." },
           { label: "Cómo medir su vehículo", to: "/recursos/como-medir", description: "Lo que necesitamos para cotizar sin verlo." },
           { label: "Preguntas frecuentes", to: "/recursos/preguntas-frecuentes", description: "Tiempos, precios, garantía y traslados." },
-          { label: "Glosario de materiales", to: "/recursos/glosario", description: "Plena flor, semianilina, denier, hidrófugo…" },
         ],
       },
     ],
@@ -222,7 +165,7 @@ export const mainNav: NavItem[] = [
           { label: "Tapizado automotriz", to: "/proyectos?categoria=tapizado-automotriz" },
           { label: "Tapizado de motos", to: "/proyectos?categoria=tapizado-de-motos" },
           { label: "Carpas y toldos", to: "/proyectos?categoria=carpas-para-negocio" },
-          { label: "Forros para muebles y equipos", to: "/proyectos?categoria=forros" },
+          { label: "Forros para equipos", to: "/proyectos?categoria=forros" },
         ],
       },
     ],

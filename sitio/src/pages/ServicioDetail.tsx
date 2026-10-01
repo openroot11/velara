@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SpecList } from "@/components/ui/SpecList";
 import { Tile } from "@/components/ui/Tile";
 import Figure from "@/components/ui/Figure";
+import { HoverSwap } from "@/components/ui/HoverSwap";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { Cta } from "@/components/ui/Cta";
 import { getService } from "@/data/services";
@@ -80,7 +81,11 @@ export default function ServicioDetail() {
                 >
                   <Reveal from={flip ? "left" : "right"} distance={40} className={flip ? "md:order-2" : ""}>
                     <div className="aspect-[4/3] overflow-hidden border border-smoke-line">
-                      <Figure image={a.image} className="h-full w-full" sizes="(min-width:768px) 45vw, 92vw" />
+                      {a.hoverImage ? (
+                        <HoverSwap image={a.image} hoverImage={a.hoverImage} labels={a.hoverLabels} sizes="(min-width:768px) 45vw, 92vw" />
+                      ) : (
+                        <Figure image={a.image} className="h-full w-full" sizes="(min-width:768px) 45vw, 92vw" />
+                      )}
                     </div>
                   </Reveal>
                   <Reveal from="up" distance={22}>

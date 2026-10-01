@@ -12,7 +12,7 @@ export default function Services() {
       <div className="shell">
         <SectionHeading
           eyebrow="Nuestro oficio"
-          title="Cinco oficios, un solo taller"
+          title="Cinco oficios para tu auto"
           intro="Cuero, vinilo y lona cortados a la medida de cada pieza — las mismas manos y el mismo estándar de acabado para un asiento o para una flota entera."
           className="mb-14"
         />

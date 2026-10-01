@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { site } from "@/data/site";
 import { services } from "@/data/services";
-import { materialFamilies } from "@/data/materials";
 import { Cta } from "@/components/ui/Cta";
 
 const taller = [
@@ -48,7 +47,7 @@ export default function Footer() {
       </div>
 
       {/* --- Columnas --- */}
-      <div className="shell grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:py-20">
+      <div className="shell grid gap-12 py-16 md:grid-cols-[1.6fr_1fr_1fr] md:py-20">
         <div className="flex flex-col gap-5">
           <img src="/brand/logo-eslogan-negativo.svg" alt={site.name} className="block h-[42px] w-auto self-start" />
           <p className="max-w-xs text-[0.92rem] leading-relaxed text-white/60">{site.tagline}</p>
@@ -67,13 +66,6 @@ export default function Footer() {
         <Column
           title="Servicios"
           links={services.map((s) => ({ label: s.menuLabel, to: `/servicios/${s.slug}` }))}
-        />
-        <Column
-          title="Materiales"
-          links={[
-            { label: "Ver catálogo", to: "/materiales" },
-            ...materialFamilies.map((f) => ({ label: f.label, to: `/materiales?familia=${f.slug}` })),
-          ]}
         />
         <Column title="El taller" links={taller} />
       </div>

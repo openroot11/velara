@@ -11,8 +11,6 @@ import { captureAdAttribution } from "@/lib/adAttribution";
 
 const Servicios = lazy(() => import("@/pages/Servicios"));
 const ServicioDetail = lazy(() => import("@/pages/ServicioDetail"));
-const Materiales = lazy(() => import("@/pages/Materiales"));
-const MaterialDetail = lazy(() => import("@/pages/MaterialDetail"));
 const Nosotros = lazy(() => import("@/pages/Nosotros"));
 const Proceso = lazy(() => import("@/pages/Proceso"));
 const Recursos = lazy(() => import("@/pages/Recursos"));
@@ -40,8 +38,6 @@ function AnimatedRoutes() {
             <Route path="/" element={<Home />} />
             <Route path="/servicios" element={<Servicios />} />
             <Route path="/servicios/:slug" element={<ServicioDetail />} />
-            <Route path="/materiales" element={<Materiales />} />
-            <Route path="/materiales/:slug" element={<MaterialDetail />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/proceso" element={<Proceso />} />
             <Route path="/recursos" element={<Recursos />} />

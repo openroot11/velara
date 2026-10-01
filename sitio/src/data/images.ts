@@ -346,6 +346,73 @@ const registry = {
     alt: "Retrato de tapicero con delantal de trabajo en el taller",
     position: "center 30%",
   },
+
+  /* ---- FOTOS NUEVAS (carpeta «nuevas fotos», optimizadas en /public/img/nuevas) ---- */
+  nvCarruselForros: {
+    src: "/img/nuevas/carrusel-forros-tapiceria.jpg",
+    alt: "Asiento deportivo tapizado en rojo y negro con el logo de VELARA bordado",
+    position: "center 60%",
+  },
+  nvForrosProteccion: {
+    src: "/img/nuevas/forros-proteccion-equipos.jpg",
+    alt: "Equipos cubiertos con forros de protección grises hechos a la medida",
+  },
+  nvCosturaRoja: {
+    src: "/img/nuevas/asiento-costura-roja.jpg",
+    alt: "Asiento de cuero negro con costura roja y emblema bordado",
+    position: "center 45%",
+  },
+  nvAsientoCueroVw: {
+    src: "/img/nuevas/asiento-cuero-vw.jpg",
+    alt: "Asiento de carro tapizado en cuero negro con logo bordado en el espaldar",
+    position: "center 40%",
+  },
+  nvForroAsiento: {
+    src: "/img/nuevas/forro-asiento-velara.jpg",
+    alt: "Forro de asiento negro y gris con el logo de VELARA, en el taller",
+  },
+  nvTapiceriaVelara: {
+    src: "/img/nuevas/tapiceria-asiento-velara.jpg",
+    alt: "Asiento tapizado en cuero negro con costura roja y el logo de VELARA",
+    position: "center 55%",
+  },
+  nvAsientoGris: {
+    src: "/img/nuevas/asiento-cuero-gris.jpg",
+    alt: "Asiento delantero tapizado en cuero gris con costuras verticales",
+  },
+  nvForroVw: {
+    src: "/img/nuevas/asiento-forro-vw.jpg",
+    alt: "Juego de asientos con forro negro y logo bordado",
+  },
+  nvForroChevrolet: {
+    src: "/img/nuevas/asiento-forro-chevrolet.jpg",
+    alt: "Asiento con forro a la medida y logo bordado, iluminado por la ventana",
+  },
+  nvDetalleCostura: {
+    src: "/img/nuevas/detalle-costura.jpg",
+    alt: "Detalle de costura doble sobre cuero oscuro",
+  },
+  nvAudioConForro: {
+    src: "/img/nuevas/audio-parlante-con-forro.jpg",
+    alt: "Parlante cubierto con un forro negro a la medida con el logo de VELARA",
+  },
+  nvAudioSinForro: {
+    src: "/img/nuevas/audio-parlante-sin-forro.jpg",
+    alt: "El mismo parlante sin el forro",
+  },
+  nvMaquinariaConForro: {
+    src: "/img/nuevas/maquinaria-con-forro.jpg",
+    alt: "Máquina industrial cubierta con un forro negro a la medida en una planta",
+  },
+  nvMaquinariaAbierta: {
+    src: "/img/nuevas/maquinaria-forro-abierto.jpg",
+    alt: "Forro de maquinaria con la tapa abierta, dejando ver el equipo",
+  },
+  nvUltimoCarrusel: {
+    src: "/img/nuevas/tapiceria-asiento-velara.jpg",
+    alt: "Asiento tapizado en cuero negro con costura roja y el logo de VELARA bordado",
+    position: "center 50%",
+  },
 } satisfies Record<string, ImageAsset>;
 
 export type ImageKey = keyof typeof registry;

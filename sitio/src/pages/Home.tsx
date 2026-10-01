@@ -3,7 +3,7 @@ import HomeHero from "@/components/sections/HomeHero";
 import Services from "@/components/sections/Services";
 import WhatYouNeed from "@/components/sections/WhatYouNeed";
 import QuickContact from "@/components/sections/QuickContact";
-import Materials from "@/components/sections/Materials";
+import WhyVelara from "@/components/sections/WhyVelara";
 import Projects from "@/components/sections/Projects";
 import Process from "@/components/sections/Process";
 import FinalCta from "@/components/sections/FinalCta";
@@ -19,7 +19,7 @@ export default function Home() {
       <HomeHero />
       <Services />
       <WhatYouNeed />
-      <Materials />
+      <WhyVelara />
       <Projects />
       <QuickContact />
       <Process />
