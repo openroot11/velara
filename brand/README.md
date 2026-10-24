@@ -1,22 +1,24 @@
-# Brand / Identidad visual
+# Brand / identidad visual
 
-Esta carpeta agrupa todo lo relacionado con la identidad de VELARA.
+Aquí va todo lo relacionado con la identidad y percepción visual de VELARA.
 
 ## Qué va aquí
 
-- paleta de colores
-- logo y variaciones
-- tipografía
-- moodboard e inspiración visual
-- arte final y mockups
-- recursos gráficos reutilizables
+- logo
+- variantes del logotipo
+- paleta
+- tipografías
+- patrones
+- recursos gráficos
+- mockups y piezas de comunicación
 
-## Subcarpetas sugeridas
+## Ubicación de referencia
 
-- `identidad-visual/`
-- `logo/`
-- `palette/`
+El repositorio ya incluye una carpeta muy rica de recursos visuales:
+- `VELARA_IDENTIDAD_VISUAL/`
+
+La intención es mover o consolidar estos activos bajo esta carpeta principal de marca para que la raíz quede más limpia.
 
 ## Regla
 
-Si una cosa sirve para comunicar la marca o definir la percepción visual, va aquí.
+Si el archivo define la marca o el estilo visual, va aquí.

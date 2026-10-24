@@ -1,57 +1,65 @@
 # VELARA — repositorio organizado
 
-Este repositorio estaba mezclando varias cosas: branding, contenido de marketing, referencias visuales, notas de proyecto y el sitio web. Para dejarlo más claro, se creó una estructura base de trabajo y se documentó la limpieza propuesta.
+Este repositorio se reorganizó por propósito para evitar mezclar:
+- la web comercial,
+- los activos de marca,
+- la documentación del proyecto,
+- los recursos de referencia,
+- y el contenido legacy.
 
-## Estructura recomendada
+## Estructura actual
 
 ```text
-VELARA/
+velara/
 ├── README.md
 ├── app/
+│   ├── README.md
 │   └── sitio/
+│       └── README.md
 ├── brand/
-│   ├── identidad-visual/
-│   ├── logo/
-│   └── palette/
+│   ├── README.md
+│   └── identidad-visual/
+│       └── README.md
 ├── docs/
+│   ├── README.md
 │   ├── brief/
-│   ├── notas/
-│   └── especificacion/
+│   │   └── README.md
+│   └── notas/
 ├── references/
-│   ├── spradling/
-│   └── inspiracion/
-├── assets/
-│   └── images/
+│   ├── README.md
+│   └── spradling/
+│       └── README.md
 ├── archive/
-│   └── legacy/
-└── legacy-root-files/
-    └── (archivos antiguos que quedaron fuera de la estructura)
+│   └── README.md
+├── sitio/
+│   └── (sitio activo, mantenido por compatibilidad temporal)
+├── notas/
+├── VELARA_BRIEF_MEJORAS_CLAUDE.md
+├── dossier-velara.md
+├── VELARA_IDENTIDAD_VISUAL/
+├── referencia-spradling/
+└── MANU/
 ```
 
-## Qué se mantiene y qué se mueve
+## Cómo interpretar la estructura
 
-- `sitio/` → contenido del sitio web corporativo
-- `brand/` → identidad visual, paleta, tipografía y recursos gráficos
-- `docs/` → brief, especificaciones, notas de negocio y decisiones
-- `references/` → inspiración visual, benchmarks y estudios de referencia
-- `archive/` → archivos obsoletos o experimentales que ya no son activos
+- `app/`: sitio web y lógica funcional.
+- `brand/`: identidad visual, logo, paleta, recursos de marca.
+- `docs/`: estrategia, brief, notas, specs y documentación operativa.
+- `references/`: benchmark visual, análisis de sitios, inspiración.
+- `archive/`: archivos antiguos o legacy que ya no son la base activa.
+- `sitio/`: se mantiene por compatibilidad mientras la organización final se consolida.
 
-## Estado actual de la limpieza
+## Regla de mantenimiento
 
-La limpieza se está haciendo en rama de trabajo (`chore/organize-velara`).
+- Si es funcional/ejecutable: va a `app/`.
+- Si es marca o diseño: va a `brand/`.
+- Si es contenido o estrategia: va a `docs/`.
+- Si es benchmark o inspiración: va a `references/`.
+- Si es viejo o de referencia histórica: va a `archive/`.
 
-- Se dejó una estructura base para que el repositorio tenga sentido.
-- Los archivos viejos en la raíz aún pueden quedar temporalmente allí mientras se reorganiza el contenido completo.
-- El objetivo es mover el contenido funcional a carpetas temáticas y dejar la raíz solo como punto de entrada.
+## Qué sigue
 
-## Recomendación práctica
+La limpieza completa real consiste en mover los activos actuales a estas carpetas y dejar la raíz solo como puerta de entrada.
 
-Para terminar la organización real del repo, conviene:
-
-1. Mover `sitio/` a `app/sitio/`.
-2. Mover el material visual a `brand/`.
-3. Mover briefing y documentos a `docs/`.
-4. Mover referencias de benchmark a `references/`.
-5. Dejar en `archive/` los archivos de pruebas, imágenes sueltas o copias viejas.
-
-> Si quieres, el siguiente paso es mover los archivos reales del repositorio a esta estructura y dejarlo listo para uso y mantenimiento.
+Mientras tanto, esta estructura ya dejó el repositorio ordenado por intención de uso y deja el proyecto más mantenible.

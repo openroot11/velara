@@ -1,20 +1,22 @@
-# Documentación de la organización
+# Docs / brief y estrategia
 
-Este directorio reúne la documentación del repositorio para que el proyecto quede más claro y mantenible.
+Este espacio organiza la documentación del proyecto.
 
-## Carpetas sugeridas
+## Qué va aquí
 
-- `brief/`: resumen del proyecto, objetivos de negocio, mensaje, público y scope.
-- `notas/`: decisiones semanales, ideas, observaciones y notas de revisión.
-- `especificacion/`: requisitos funcionales, estructura de contenido, decisiones de UX y documento técnico.
+- brief de mejoras
+- documentación de negocio
+- notas de proyecto
+- especificaciones
+- acuerdos de UX y contenido
+- contexto del proyecto
 
-## Archivos que conviene ubicar aquí
+## Archivos relevantes
 
 - `VELARA_BRIEF_MEJORAS_CLAUDE.md`
 - `dossier-velara.md`
-- documentos de especificación y procesos
-- análisis de producto y notas internas
+- `notas/`
 
 ## Regla
 
-Todo lo que sea de decisión, estrategia o documentación de producto debe vivir aquí, no en la raíz del repositorio.
+La documentación del producto y la marca no debe mezclarse con el código ni con los activos visuales.

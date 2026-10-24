@@ -1,20 +1,20 @@
-# References / Inspiración
+# References / benchmark
 
-Aquí se guardan las referencias visuales y de benchmark que sirvieron como punto de partida.
+Aquí va la inspiración y la referencia visual que ayudó a definir la estructura del proyecto.
 
 ## Qué va aquí
 
-- referencias de sitios web
-- estudios de marca
-- inspiración de diseño
-- carpetas o recursos de benchmarking
-- material de comparación
+- análisis de sitios
+- benchmark visual
+- capturas de referencia
+- inspiración de navegación y contenido
 
-## Subcarpetas sugeridas
+## Archivos relevantes
 
-- `spradling/`
-- `inspiracion/`
+- `referencia-spradling/`
+- `GUIA-SPRADLING.md`
+- capturas de referencia del sitio análogo
 
 ## Regla
 
-Todo lo que represente comparación, benchmark o estudio visual pertenece aquí.
+Esto es material de estudio, no código productivo ni recursos de la marca final.
